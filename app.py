@@ -7,8 +7,8 @@ app = Flask(__name__)
 CORS(app)
 @app.route('/demo',methods=['GET'])
 def demo():
-    ts = requests.get("http://germanydnsx11.com:8000/ZbLQXUxk/Es272827../89061",allow_redirects = True)
-    return ts.text
+    r = requests.head("http://germanydnsx11.com:8000/ZbLQXUxk/Es272827../89061", allow_redirects=True)
+    return r.url
 
 
 if __name__ == '__main__':
