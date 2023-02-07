@@ -7,12 +7,15 @@ app = Flask(__name__)
 CORS(app)
 @app.route('/demo',methods=['GET'])
 def demo():
-    r = requests.head("http://germanydnsx11.com:8000/ZbLQXUxk/Es272827../89036", allow_redirects=False)
-    r.raise_for_status()
-    if 300 < r.status_code < 400:
-        url = r.headers.get('Location', url)
-
-    return url
+    long_url = ''
+    url = 'http://germanydnsx11.com:8000/ZbLQXUxk/Es272827../89036'
+    try:
+        while True:
+            long_url = requests.head(url).headers['location']
+            print(long_url)
+            url = long_url
+    except:
+        print(long_url)
 
 if __name__ == '__main__':
     app.run()
