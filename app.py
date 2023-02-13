@@ -5,24 +5,30 @@ from flask_cors import CORS
 import re
 app = Flask(__name__)
 CORS(app)
-@app.route('/demo',methods=['GET'])
-def demo():
+#https://tulipbettv44.com
+#https://monotv100.live/
+#https://levant2.tv
+@app.route('/getm3u8',methods=['GET'])
+def getm3u8():
+    source = request.args.get("source")
     headers = {
-            'accept': '*/*',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'tr-TR,tr;q=0.9',
-            'origin': 'https://www.maltinok.com',
-            'referer': 'https://www.maltinok.com/',
-            'sec-ch-ua': '"Not?A_Brand";v="8", "Chromium";v="108", "Google Chrome";v="108"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'empty',
-            'sec-fetch-mode': 'cors',
-            'sec-fetch-site': 'cross-site',
-            'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
+'accept': '*/*',
+'accept-encoding': 'gzip, deflate, br',
+'accept-language': 'tr-TR,tr;q=0.9',
+'origin': 'https://kalebettv29.com',
+'referer': 'https://kalebettv29.com/',
+'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
+'sec-ch-ua-mobile': '?0',
+'sec-ch-ua-platform': '"Windows"',
+'sec-fetch-dest': 'empty',
+'sec-fetch-mode': 'cors',
+'sec-fetch-site': 'cross-site',
+'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0'
     }
-    ts = requests.get("http://germanydnsx11.com:8000/ZbLQXUxk/Es272827../89061",allow_redirects = True,headers=headers)
-    return ts.text
+    ts = requests.get(source, headers=headers)
+    tsal = ts.text
+    return tsal
 
 if __name__ == '__main__':
     app.run()
+
