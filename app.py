@@ -26,7 +26,7 @@ def getm3u8():
     }
     ts = requests.get(source, headers=headers)
     tsal = ts.text
-    tsal = tsal.split('" ')
+    tsal = tsal.split('"')
     host = tsal[1]
     return host
 
