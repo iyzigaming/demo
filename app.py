@@ -28,7 +28,28 @@ def getm3u8():
     tsal = ts.text
     tsal = tsal.split('"')
     host = tsal[2]
-    return host
+    return "https://testyayin.herokuapp.com/getcss?source="+host
+    
+    
+@app.route('/getcss',methods=['GET'])
+def getcss():
+    source = request.args.get("source")
+    headers = {
+'accept': '*/*',
+'accept-language': 'tr-TR,tr;q=0.9',
+'origin': 'https://kalebettv29.com',
+'referer': 'https://kalebettv29.com/',
+'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
+'sec-ch-ua-mobile': '?0',
+'sec-ch-ua-platform': '"Windows"',
+'sec-fetch-dest': 'empty',
+'sec-fetch-mode': 'cors',
+'sec-fetch-site': 'cross-site',
+'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0'
+    }
+    ts = requests.get(source, headers=headers)
+    ts = ts.text
+    return ts    
 
 if __name__ == '__main__':
     app.run()
