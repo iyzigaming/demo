@@ -48,10 +48,9 @@ def getcss():
 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0'
     }
     host = source.replace("https://","").split("/")
-    host = host[0]+"/"+host[1]+"/"
-    return host
+    host = "https://"+host[0]+"/"+host[1]+"/"
     ts = requests.get(source, headers=headers)
-    ts = ts.text
+    ts = ts.text.replace("https://",host)
     return ts    
 
 if __name__ == '__main__':
