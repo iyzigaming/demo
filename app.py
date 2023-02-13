@@ -27,7 +27,7 @@ def getm3u8():
     ts = requests.get(source, headers=headers)
     tsal = ts.text
     tsal = tsal.split('"')
-    host = tsal[1]
+    host = tsal[2]
     return host
 
 if __name__ == '__main__':
