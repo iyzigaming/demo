@@ -50,7 +50,7 @@ def getcss():
     host = source.replace("https://","").split("/")
     host = "https://"+host[0]+"/"+host[1]+"/"
     ts = requests.get(source, headers=headers)
-    ts = ts.text.replace("https://",host)
+    ts = ts.text.replace(",\n",",\n"+host)
     return ts    
 
 if __name__ == '__main__':
