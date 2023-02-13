@@ -27,7 +27,7 @@ def getm3u8():
     ts = requests.get(source, headers=headers)
     tsal = ts.text
     tsal = tsal.split('"')
-    host = tsal[2].replace(' ','')
+    host = tsal[2]
     return "https://testyayin.herokuapp.com/getcss?source="+host
     
     
@@ -47,6 +47,9 @@ def getcss():
 'sec-fetch-site': 'cross-site',
 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36 OPR/95.0.0.0'
     }
+    host = source.replace("https://","").split("/")
+    host = host[0]+"/"+host[1]+"/"
+    return host
     ts = requests.get(source, headers=headers)
     ts = ts.text
     return ts    
