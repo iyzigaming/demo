@@ -49,6 +49,7 @@ def getcss():
     }
     host = source.replace("https://","").split("/")
     host = "https://"+host[0]+"/"+host[1]+"/"
+    host = host.replace("https:// ","https://")
     ts = requests.get(source, headers=headers)
     ts = ts.text.replace(",\n",",\n"+host)
     return ts    
