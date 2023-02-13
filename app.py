@@ -26,7 +26,6 @@ def getm3u8():
     }
     ts = requests.get(source, headers=headers)
     tsal = ts.text
-    return tsal
     tsal = tsal.split('"')
     host = tsal[2].replace("\n","")
     return "https://testyayin.herokuapp.com/getcss?source="+host
