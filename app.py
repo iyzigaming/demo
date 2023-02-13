@@ -13,7 +13,6 @@ def getm3u8():
     source = request.args.get("source")
     headers = {
 'accept': '*/*',
-'accept-encoding': 'gzip, deflate, br',
 'accept-language': 'tr-TR,tr;q=0.9',
 'origin': 'https://kalebettv29.com',
 'referer': 'https://kalebettv29.com/',
