@@ -27,6 +27,10 @@ def getm3u8():
     ts = requests.get(source, headers=headers)
     tsal = ts.text
     tsal = tsal.replace("https://","https://testyayin.herokuapp.com/getcss?source=https://")
+    if "mediaplaylist.json" in tsal:
+        source = source.replace("https://","").split("/")
+        source = source[2].replace(".m3u8","")
+        tsal = source
     #tsal = tsal.split('"')
     #host = tsal[2].replace("\n","")
     return tsal
