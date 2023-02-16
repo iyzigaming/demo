@@ -31,6 +31,7 @@ def getm3u8():
         source2 = source.replace("https://","").split("/")
         source2 = source[2].replace(".m3u8","")
         source = source.replace("https://","").split("/")
+        return source2
         tsal = tsal.replace(source2+"/1","https://testyayin.herokuapp.com/getcss?source=https://"+source[0]+"/"+source[1])
     #tsal = tsal.split('"')
     #host = tsal[2].replace("\n","")
