@@ -31,7 +31,7 @@ def getm3u8():
         source2 = source.replace("https://","").split("/")
         source2 = source2[2].replace(".m3u8","")
         source = source.replace("https://","").split("/")
-        tsal = tsal.replace("https://"+source2+"/1",source[0]+"/"+source[1]+"/"+source2+"/1")
+        tsal = tsal.replace(source2+"/1","https://"+source[0]+"/"+source[1]+"/"+source2+"/1")
         return tsal
     return tsal
     
