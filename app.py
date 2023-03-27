@@ -8,6 +8,8 @@ CORS(app)
 #https://tulipbettv44.com
 #https://monotv100.live/
 #https://levant2.tv
+#https://enohd4.com
+#https://jokerbettv163.com/
 @app.route('/getm3u8',methods=['GET'])
 def getm3u8():
     source = request.args.get("source")
