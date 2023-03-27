@@ -14,8 +14,8 @@ def getm3u8():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://tulipbettv44.com',
-'referer': 'https://tulipbettv44.com/',
+'origin': 'https://jokerbettv163.com',
+'referer': 'https://jokerbettv163.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
@@ -42,8 +42,8 @@ def getjson():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://tulipbettv44.com',
-'referer': 'https://tulipbettv44.com/',
+'origin': 'https://jokerbettv163.com',
+'referer': 'https://jokerbettv163.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
@@ -63,8 +63,8 @@ def getcss():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://tulipbettv44.com',
-'referer': 'https://tulipbettv44.com/',
+'origin': 'https://jokerbettv163.com',
+'referer': 'https://jokerbettv163.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
@@ -87,8 +87,8 @@ def getjpeg():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://tulipbettv44.com',
-'referer': 'https://tulipbettv44.com/',
+'origin': 'https://jokerbettv163.com',
+'referer': 'https://jokerbettv163.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
