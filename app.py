@@ -9,15 +9,15 @@ CORS(app)
 #https://monotv100.live/
 #https://levant2.tv
 #https://enohd4.com
-#https://jokerbettv163.com/
+#https://jokerbettv175.com/
 @app.route('/getm3u8',methods=['GET'])
 def getm3u8():
     source = request.args.get("source")
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://enohd5.com',
-'referer': 'https://enohd5.com/',
+'origin': 'https://jokerbettv175.com',
+'referer': 'https://jokerbettv175.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
@@ -44,8 +44,8 @@ def getjson():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://enohd5.com',
-'referer': 'https://enohd5.com/',
+'origin': 'https://jokerbettv175.com',
+'referer': 'https://jokerbettv175.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
@@ -65,8 +65,8 @@ def getcss():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://enohd5.com',
-'referer': 'https://enohd5.com/',
+'origin': 'hhttps://jokerbettv175.com',
+'referer': 'https://jokerbettv175.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
@@ -89,8 +89,8 @@ def getjpeg():
     headers = {
 'accept': '*/*',
 'accept-language': 'tr-TR,tr;q=0.9',
-'origin': 'https://enohd5.com',
-'referer': 'https://enohd5.com/',
+'origin': 'https://jokerbettv175.com',
+'referer': 'https://jokerbettv175.com/',
 'sec-ch-ua': '"Opera";v="95", "Chromium";v="109", "Not;A=Brand";v="24"',
 'sec-ch-ua-mobile': '?0',
 'sec-ch-ua-platform': '"Windows"',
